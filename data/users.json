@@ -1,0 +1,14 @@
+[
+  {
+    "id": "ed0436af-f290-4939-ada9-746790ff011c",
+    "name": "Rishabh",
+    "email": "test@example.com",
+    "passwordHash": "3de9273e88d1153033fccc7574cc168a51022a55738bff6727ae581e8c19380f"
+  },
+  {
+    "id": "566ab199-17a6-4faa-aba7-cdc04ff82a4a",
+    "name": "Mayank",
+    "email": "mayank.2024jain@gmail.com",
+    "passwordHash": "adaf5383fac697ff9e2fe04e69b407098de8b04c705f27e77cb5b428fffacfed"
+  }
+]

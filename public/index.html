@@ -1,0 +1,87 @@
+  `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OptiCode</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <h1>OptiCode</h1>
+      <p>Analyze source code, detect inefficiencies, and get optimization suggestions.</p>
+    </div>
+    <button id="themeToggle">Toggle Theme</button>
+  </header>
+
+  <main class="grid">
+    <section class="card input-card">
+      <h2>Code Input</h2>
+      <label for="language">Select Language</label>
+      <select id="language">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="cpp">C++</option>
+        <option value="c">C</option>
+      </select>
+
+      <label for="codeInput">Paste Code</label>
+      <textarea id="codeInput" placeholder="Paste your code here..."></textarea>
+
+      <div class="button-row">
+        <button id="sampleBtn">Load Sample</button>
+        <button id="analyzeBtn">Analyze Code</button>
+        <button id="clearBtn">Clear</button>
+      </div>
+    </section>
+
+    <section class="card result-card">
+      <h2>Analysis Result</h2>
+      <div id="placeholder" class="placeholder">Your analysis will appear here.</div>
+      <div id="results" class="hidden">
+        <div class="score-box">
+          <span>Optimization Score</span>
+          <h3 id="score">0/100</h3>
+        </div>
+
+        <div class="metrics">
+          <h3>Metrics</h3>
+          <ul id="metricsList"></ul>
+        </div>
+
+        <div class="issues">
+          <h3>Detected Issues</h3>
+          <ul id="issuesList"></ul>
+        </div>
+
+        <div class="suggestions">
+          <h3>Suggestions</h3>
+          <ul id="suggestionsList"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card full-width">
+      <h2>Before vs Optimized Code</h2>
+      <div class="compare-grid">
+        <div>
+          <h3>Original Code</h3>
+          <pre id="originalCode"></pre>
+        </div>
+        <div>
+          <h3>Optimized Code</h3>
+          <pre id="optimizedCode"></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built as a Web Technology project - OptiCode</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
